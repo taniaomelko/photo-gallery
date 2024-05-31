@@ -1,11 +1,8 @@
-import Photos from "./components/Photos";
-
-export default function Home() {
-
+export default function NotFound() {
   return (
     <section className="py-20">
       <div className="container">
-        <Photos />
+        <h1 className="text-20 font-bold">Page not found</h1>
       </div>
     </section>
   );
