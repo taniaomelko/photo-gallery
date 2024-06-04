@@ -8,6 +8,12 @@ type Props = {
   }
 }
 
+export async function generateStaticParams() {
+  return [
+    { myParams: ['default'] }
+  ];
+}
+
 export async function generateMetadata({ params: { myParams } }: Props): Promise<Metadata> {
   const isSingleImage = myParams?.length === 1 && myParams[0].startsWith('image-');
   if (isSingleImage) {
